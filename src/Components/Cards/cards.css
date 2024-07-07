@@ -1,0 +1,21 @@
+.container{
+    max-width: 90%;
+    height: 120vh;
+    padding: 1.5rem;
+    background-color: #Fff;
+    margin: auto;
+    border-radius: .5rem;
+    box-shadow: inset 2px 2.5px #E0E0E0;
+    padding-bottom: 5rem;
+    
+}
+.main-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    
+
+}
+

@@ -1,0 +1,42 @@
+.header-PI {
+  margin: auto;
+  width: 90%;
+  height: auto;
+  background-image: url('../../assets/Images/transparent.png');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}
+.pokemon-header {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  gap: .5rem;
+}
+.pokemon-header .btn-back{
+    display: flex;
+    justify-content: center;
+}
+.pokemon-header h3 {
+  text-align: end;
+  font-size: 1.5rem;
+  margin-left: auto;
+  font-weight: 500;
+}
+.pokemon-header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.header-PI button {
+  border: none;
+  background-color: transparent;
+  font-size: 2.2rem;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+}
+.next-previous-btn{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 9rem;
+}

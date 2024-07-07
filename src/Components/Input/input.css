@@ -1,0 +1,18 @@
+.input{
+    width: 17rem;
+    height: 2.5rem;
+    border-radius: 1.5rem 0 0 1.5rem;
+    border: none;
+    box-shadow: inset 3px 4px 3px 0px #E0E0E0;
+}
+.input::placeholder{
+    padding-left: 10px;
+}
+.input-btn{
+    color:  #DC0A2D;
+    border: none;
+    border-radius: 0 1.5rem  1.5rem 0;
+    height: 2.6rem;
+    box-shadow: inset 3px 4px 3px 0px #E0E0E0;
+    background-color: #fff;
+}

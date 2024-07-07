@@ -1,0 +1,30 @@
+.container-pokemon{
+    padding: 2rem;
+}
+.pokemonImage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.pokemonImage img {
+  max-width: 20rem;
+  height: 20rem;
+  margin-bottom: 4.5rem;
+}
+
+.main-pokemon {
+    max-width: 70%;
+    height: 90vh;
+    padding: 1.5rem;
+    background-color: #Fff;
+    margin: auto;
+    border-radius: .5rem;
+    box-shadow: inset 2px 2.5px #E0E0E0;
+    padding-bottom: 5rem;
+}
+.main-pokemon h5{
+  font-size: 2rem;
+  text-align: center;
+}

@@ -1,0 +1,29 @@
+.stats-div {
+  width: 75%;
+  margin: auto;
+  height: auto;
+  text-align: center;
+}
+
+.stats-table {
+  margin: 0 auto;
+  width: 100%;
+  font-size: 1.3rem;
+}
+
+.trStats {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  row-gap: 1rem;
+}
+
+.stats {
+  text-align: center;
+  padding-left: 2rem;
+  padding-right: 3rem;
+}
+.nameStats{
+  font-weight: 600;
+  padding-right: 2rem;
+}

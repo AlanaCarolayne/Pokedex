@@ -1,0 +1,33 @@
+.infos-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-inline: 7rem;
+}
+.infos-container h5 {
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+}
+.infos-container .icon-info {
+  margin-right: 0.5rem;
+}
+.height-div {
+  border-left: 1px solid #e0e0e0;
+  border-right: 1px solid #e0e0e0;
+  padding-inline: 5rem;
+}
+.infos-container p {
+  color: 666666;
+  text-align: center;
+  font-size: 1rem;
+}
+.abilities-div .ability02 {
+  margin-top: -1.5rem;
+
+}
+ .height-div , .weight-div {
+    margin-top: 2rem;
+} 

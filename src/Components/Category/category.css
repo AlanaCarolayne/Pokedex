@@ -1,0 +1,12 @@
+.category-div {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: auto;
+}
+.category-div button {
+  text-align: center;
+  border: none;
+  color: black;
+}
