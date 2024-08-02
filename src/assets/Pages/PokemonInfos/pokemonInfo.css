@@ -1,5 +1,5 @@
-.container-pokemon{
-    padding: 2rem;
+.container-pokemon {
+  padding: 2rem;
 }
 .pokemonImage {
   position: absolute;
@@ -15,16 +15,39 @@
 }
 
 .main-pokemon {
-    max-width: 70%;
-    height: 90vh;
-    padding: 1.5rem;
-    background-color: #Fff;
-    margin: auto;
-    border-radius: .5rem;
-    box-shadow: inset 2px 2.5px #E0E0E0;
-    padding-bottom: 5rem;
+  max-width: 70%;
+  height: 110vh;
+  padding: 1.5rem;
+  background-color: #fff;
+  margin: auto;
+  border-radius: 0.5rem;
+  box-shadow: inset 2px 2.5px #e0e0e0;
+  padding-bottom: 5rem;
 }
-.main-pokemon h5{
+.main-pokemon h5 {
   font-size: 2rem;
   text-align: center;
+}
+.div-fav-btn{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.fav-btn {
+ 
+  margin: 2rem;
+  border: 1px solid #e0e0e0;
+  background-color: transparent;
+  
+  color: #dc0a2d;
+  font-size: 1rem;
+  border-radius: 3rem;
+}
+.fav-btn:hover {
+  color: #e0e0e0;
+  background-color: #dc0a2d;
+  border-color: #dc0a2d;
+}
+.icon-fav{
+  font-size: 1.3rem;
 }

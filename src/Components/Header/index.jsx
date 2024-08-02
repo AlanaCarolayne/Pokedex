@@ -2,7 +2,7 @@
   import pokebola from "../../assets/Images/Pokeball.png";
   import "./header.css";
 
-  const Header = ({ setSearch }) => {
+  const Header = ({ setSearch}) => {
     return (
       <header className="header">
         <div className="header-logo">

@@ -1,6 +1,6 @@
 import "./cards.css";
 import Card from "../Card";
-const Cards = ({ pokemons, saveChoise={saveChoise} }) => {
+const Cards = ({ pokemons, saveChoise,  }) => {
   return (
     <>
       <main className="container">
