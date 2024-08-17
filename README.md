@@ -27,7 +27,7 @@
 
 ### Contribuições são bem-vindas! Se você tem alguma ideia ou encontrou um bug, sinta-se à vontade para abrir uma issue ou enviar um pull request.
 
-## Veja aqui as informações sobre seus pokémons favoritos: 
+## Veja aqui as informações sobre seus pokémons favoritos, [acesse o site!](https://pokedex-dusky-delta.vercel.app/)
 
 
 #### Projeto densevolvido por [Alana Siqueira](https://www.linkedin.com/in/alana-siqueira-6469ba235/)
