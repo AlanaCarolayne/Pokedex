@@ -29,3 +29,42 @@
     padding: auto;
     
 }
+.header .fav-btn {
+    text-decoration: none;
+    padding: .5rem;
+    margin: 2rem;
+    border: 1px solid #e0e0e0;
+    background-color: transparent;
+    color: #e0e0e0;
+    font-size: 1rem;
+    border-radius: 3rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: .5rem;
+  }
+  .header .fav-btn:hover {
+    color: #dc0a2d;
+    background-color: #e0e0e0;
+    border-color: #dc0a2d;
+  }
+  
+ @media (max-width: 768px ) {
+    .header{
+        flex-wrap: wrap;
+        margin-bottom: 3rem;
+    }
+    .header-img{
+        width: 2.5rem;
+        margin-left: 1rem;
+    }
+    .header-logo{
+        gap: 1rem;
+        margin: 1rem;
+    }
+ }
+ @media (max-width: 480px) {
+    .header-title{
+        font-size: 1.5rem;
+    }
+ }

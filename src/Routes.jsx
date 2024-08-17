@@ -2,18 +2,25 @@ import styled from "styled-components";
 import Footer from "./Components/Footer";
 import "styled-components";
 import { useEffect, useState } from "react";
-import { BrowserRouter, Route, Routes, useNavigate } from "react-router-dom";
+import {
+  BrowserRouter,
+  Link,
+  Route,
+  Routes,
+  useNavigate,
+} from "react-router-dom";
 import NotFound from "./assets/Pages/NotFound";
 import Home from "./assets/Pages/Home";
 import PokemonInfo from "./assets/Pages/PokemonInfos";
+
 
 function AppRoutes() {
   const StyledBody = styled.div`
     font-family: "Poppins", sans-serif;
     font-size: 1rem;
     background-color: ${(props) => props.color || "#dc0a2d"};
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: auto;
   `;
   const [types, setTypes] = useState([
     {
@@ -98,17 +105,16 @@ function AppRoutes() {
   const [chosen, setChosen] = useState(null);
   const [color, setColor] = useState();
   const [search, setSearch] = useState("");
-  const [pokemonFav, setPokemonFav] = useState([]);
   const saveChoise = (pokemon) => {
     setChosen(pokemon);
   };
-  const changePokemonBack = (id,name) => {
-    const backId = id > 1 ? id - 1 : 1; // Garante que não vá para IDs menores que 1
+  const changePokemonBack = (id) => {
+    const backId = id > 1 ? id - 1 : 1;
     const previousPokemon = pokemons.find((p) => p.id === backId);
     if (previousPokemon) {
       setChosen(previousPokemon);
-      setSearch(previousPokemon.name)
-    }else {
+      setSearch(previousPokemon.name);
+    } else {
       fetch(`https://pokeapi.co/api/v2/pokemon/${backId}/`)
         .then((response) => response.json())
         .then((data) => {
@@ -122,7 +128,7 @@ function AppRoutes() {
     }
   };
 
-  const changePokemonNext = (id, name) => {
+  const changePokemonNext = (id) => {
     const nextId = id + 1;
     const nextPokemon = pokemons.find((p) => p.id === nextId);
 
@@ -143,25 +149,7 @@ function AppRoutes() {
     }
   };
 
-  const addFav = (pokemon) => {
-    // Verifica se o Pokémon já está nos favoritos
-    const isFav = pokemonFav.some((p) => p.id === pokemon.id);
-  
-    if (isFav) {
-      // Se já estiver, remove dos favoritos
-      setPokemonFav(pokemonFav.filter((p) => p.id !== pokemon.id));
-    } else {
-      // Se não estiver, adiciona aos favoritos
-      setPokemonFav([...pokemonFav, { ...pokemon, fav: true }]);
-    }
-  
-    if (chosen && chosen.id === pokemon.id) {
-      setChosen({ ...pokemon, fav: !pokemon.fav });
-    }
-    console.log(pokemonFav);
-  };
-  
-
+ 
   const setColorType = (category) => {
     const type = types.find((type) => type.category === category);
     if (type) {
@@ -180,8 +168,8 @@ function AppRoutes() {
         )
       );
       Promise.all(promises).then((pokemonsArray) => {
-        setPokemons(pokemonsArray);
-      });
+        setPokemons(pokemonsArray);    
+        });
     }
   };
   useEffect(() => {
@@ -194,6 +182,7 @@ function AppRoutes() {
         .catch((error) => {
           console.error(error);
           setPokemons([]);
+        
         });
     } else {
       loadInitialPokemons();
@@ -212,16 +201,15 @@ function AppRoutes() {
                 setPokemons={setPokemons}
                 saveChoise={saveChoise}
                 setSearch={setSearch}
-                setColorType = {setColorType}
-                />
-              }
+                setColorType={setColorType}
               />
+            }
+          />
           <Route path="/*" element={<NotFound setSearch={setSearch} />} />
           <Route
             path="/pokemonInfo"
             element={
               <PokemonInfo
-              fav = {addFav}
                 chosen={chosen}
                 setColor={setColorType}
                 color={color}
@@ -231,6 +219,7 @@ function AppRoutes() {
               />
             }
           />
+
         </Routes>
         <Footer />
       </StyledBody>

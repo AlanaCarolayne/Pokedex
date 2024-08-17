@@ -1,7 +1,6 @@
 import { FiSearch } from "react-icons/fi";
 import "./input.css";
 import React from "react";
-import { useEffect } from "react";
 const Input = ({ setSearch}) => {
   const inputRef = React.createRef();
  
@@ -10,7 +9,7 @@ const Input = ({ setSearch}) => {
     const searchQuery = inputRef.current.value.trim();
     setSearch(searchQuery);
   };
-
+  
   return (
     <form>
       <input

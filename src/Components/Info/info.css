@@ -2,9 +2,10 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-inline: 7rem;
+  margin-inline: 9rem;
 }
 .infos-container h5 {
+  text-align: center;
   font-size: 1.3rem;
   display: flex;
   justify-content: center;
@@ -31,3 +32,24 @@
  .height-div , .weight-div {
     margin-top: 2rem;
 } 
+
+@media (max-width: 860px ) {
+  .infos-container{
+    margin-inline: 3rem;
+    margin-top: 2rem;
+  }
+  .infos-container h5{
+   font-size: 1rem;
+  }
+  .height-div{
+    padding-inline: 2rem ;
+  }
+  }
+  @media (max-width: 480px) {
+    .infos-container{
+      margin-inline: 1.5rem;
+    }
+    .height-div{
+      padding-inline: 1rem ;
+    }
+  }

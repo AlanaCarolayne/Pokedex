@@ -3,7 +3,6 @@ import Header_Pokemon_Info from "../../../Components/Header_PokemonInfo";
 import Info from "../../../Components/Info";
 import BaseStats from "../../../Components/BaseStats";
 import { useEffect } from "react";
-import { IoIosHeartEmpty, IoIosHeart } from "react-icons/io";
 import Category from "../../../Components/Category";
 
 const PokemonInfo = ({
@@ -13,24 +12,16 @@ const PokemonInfo = ({
   initial,
   backPokemon,
   nextPokemon,
-  fav,
+
 }) => {
   useEffect(() => {
     if (chosen) {
       setColor(chosen.types[0].type.name);
     }
+    
   }, [chosen, setColor]);
 
-  let iconFav = chosen.fav ? (
-    <p>
-      Remover dos Favoritos <IoIosHeart className="icon-fav"/>
-    </p>
-  ) : (
-    <p>
-      Adicionar aos Favoritos
-      <IoIosHeartEmpty className="icon-fav"/>{" "}
-    </p>
-  );
+
   return (
     <>
       <div className="container-pokemon">
@@ -75,17 +66,7 @@ const PokemonInfo = ({
                 color={color}
               />
             ))}
-            <div className="div-fav-btn">
-
-          <button
-            onClick={() => {
-              fav(chosen);
-            }}
-            className="fav-btn"
-          >
-            {iconFav}
-          </button>
-            </div>
+        
         </main>
       </div>
     </>

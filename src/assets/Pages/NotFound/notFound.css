@@ -1,61 +1,134 @@
-.container-error{
+.container-error {
     max-width: 80%;
-    height: 100vh;
-    background-color: #Fff;
+    min-height: 100vh;
+    background-color: #fff;
     margin: auto;
-    border-radius: .5rem;
-    box-shadow: inset 2px 2.5px #E0E0E0;
+    border-radius: 0.5rem;
+    box-shadow: inset 2px 2.5px #e0e0e0;
     padding-bottom: 3rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+   
 }
 
-.div-error{
-    margin-top: -7rem;
+.div-error {
     display: flex;
     flex-direction: column;
     text-align: center;
+    align-items: center;
+    margin-top: 2rem; 
+    gap: 8rem; 
 }
-.div-error img{
+
+.div-error img {
     width: 15rem;
     height: auto;
 }
-.div-error h3{
-    letter-spacing: 2rem;
-   font-size: 12rem;
-   color: #2b2a2a;
+
+.div-error h3 {
+    letter-spacing: 1rem;
+    font-size: 8rem;
+    color: #2b2a2a;
+    margin: 0;
 }
-.div-error h4{
-    margin-top: -8rem;
+
+.div-error h4 {
+    margin-top: -4rem;
     color: #2b2a2a;
     font-size: 2rem;
+    margin-bottom: 1.5rem;
 }
-.error-div-btn button{
+
+.error-div-btn {
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+    margin-right: auto
+}
+
+.error-div-btn button {
     display: flex;
     gap: 5px;
     align-items: center;
     color: #fff;
     font-weight: 500;
     font-size: 1.5rem;
-    border: 1px solid  #fff;
-    background-color:  #dc0a2d;
+    border: 1px solid #fff;
+    background-color: #dc0a2d;
     border-radius: 2rem;
-    padding: .7rem 1.5rem ;
-    transition: color .7s;
+    padding: 0.7rem 1.5rem;
+    transition: color 0.7s;
 }
-.error-div-btn button:hover{
-    color: #dc0a2d;
-    border: 2px solid  #dc0a2d;
-    background-color:  transparent;
 
+.error-div-btn button:hover {
+    color: #dc0a2d;
+    border: 2px solid #dc0a2d;
+    background-color: transparent;
 }
-.icon-error{
+
+.icon-error {
     font-size: 2.5rem;
 }
-.error-div-btn{
-    margin-top: 1.5rem;
-    margin-left: 1.5rem;
-    margin-right: auto
+
+@media (max-width: 860px) {
+    .div-error img {
+        width: 10rem;
+    }
+
+    .div-error h3 {
+        font-size: 6rem;
+        letter-spacing: 0.5rem;
+    }
+
+    .div-error h4 {
+        font-size: 1.5rem;
+        margin-top: -2rem;
+    }
+
+    .error-div-btn button {
+        font-size: 1.2rem;
+        padding: 0.6rem 1.2rem;
+    }
+
+    .icon-error {
+        font-size: 2rem;
+    }
+
+    .div-error {
+        gap: 5rem; /* Reduz o espaçamento em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .container-error {
+        padding: 2rem 1rem;
+    }
+
+    .div-error img {
+        width: 8rem;
+    }
+
+    .div-error h3 {
+        font-size: 4rem;
+        letter-spacing: 0.3rem;
+    }
+
+    .div-error h4 {
+        font-size: 1.2rem;
+        margin-top: -1rem;
+    }
+
+    .error-div-btn button {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .icon-error {
+        font-size: 1.5rem;
+    }
+
+    .div-error {
+        gap: 4rem; 
+    }
 }

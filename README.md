@@ -11,7 +11,6 @@
 - Busca de Pokémon por nome ou ID.
 - Exibição de detalhes de cada Pokémon, como tipos, habilidades, e estatísticas.
 - Navegação entre  Pokémons.
-- Sistema de favoritar Pokémons
 - Responsividade para diferentes tamanhos de tela.
 
 ## Tecnologias Utilizadas:

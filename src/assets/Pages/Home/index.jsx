@@ -1,7 +1,7 @@
 import Cards from "../../../Components/Cards";
 import Header from "../../../Components/Header";
 import { useEffect } from "react";
-const Home = ({ pokemons, setPokemons, saveChoise, setSearch, setColorType,  }) => {
+const Home = ({ pokemons, saveChoise, setSearch, setColorType }) => {
   useEffect(() => {
     setColorType("#dc0a2d"); 
   }, []);
@@ -10,7 +10,6 @@ const Home = ({ pokemons, setPokemons, saveChoise, setSearch, setColorType,  }) 
       <Header setSearch={setSearch} />
       <Cards
         pokemons={pokemons}
-        setPokemons={setPokemons}
         saveChoise={saveChoise}
       />
     </>
