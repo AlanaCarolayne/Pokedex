@@ -1,12 +1,15 @@
 .category-div {
-  margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: auto;
+  gap: 3rem;
+  
 }
-.category-div button {
+
+.category-div h4 {
+  margin: 3rem 1rem 1rem 1rem;
   text-align: center;
-  border: none;
-  color: black;
+  padding: 1rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 3rem;
 }

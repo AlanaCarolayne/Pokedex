@@ -16,3 +16,19 @@
     box-shadow: inset 3px 4px 3px 0px #E0E0E0;
     background-color: #fff;
 }
+/* @media (max-width: 815px ) {
+    .input{
+        max-width: 10rem;
+        height: 2rem;
+    }
+    .input-btn{
+        height: 2.1rem;
+    }
+    
+}
+@media (max-width: 700px) {
+    .input{
+        max-width: 7rem;
+    }
+    
+} */

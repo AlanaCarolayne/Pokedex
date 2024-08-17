@@ -23,7 +23,32 @@
   padding-left: 2rem;
   padding-right: 3rem;
 }
-.nameStats{
+.nameStats {
   font-weight: 600;
   padding-right: 2rem;
+}
+@media (max-width: 860px) {
+  .stats-div {
+    width: 100%;
+    padding-top: 0.2rem;
+  }
+  .stats-table {
+    width: 90%;
+    font-size: 1.1rem;
+  }
+  .trStats {
+    row-gap: 0.5rem;
+  }
+  .nameStats {
+    padding-right: 0;
+  }
+  .stats {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+@media (max-width: 480px) {
+  .stats-table {
+    font-size: .9rem;
+  }
 }

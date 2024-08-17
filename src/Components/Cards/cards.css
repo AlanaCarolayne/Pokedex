@@ -1,6 +1,6 @@
 .container{
     max-width: 90%;
-    height: 120vh;
+    min-height: 50vh;
     padding: 1.5rem;
     background-color: #Fff;
     margin: auto;
@@ -16,6 +16,17 @@
     flex-wrap: wrap;
     gap: 1rem;
     
-
 }
-
+@media (max-width: 868px ) {
+    .container{
+        max-width: 80%;
+    }
+    .main-container{
+        justify-content: center;
+        gap: 1.2rem;
+    }
+   
+ }
+ @media (max-width: 480px) {
+   
+ }

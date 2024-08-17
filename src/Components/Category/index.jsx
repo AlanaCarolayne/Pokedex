@@ -1,10 +1,10 @@
 import "./category.css";
 
-const Category = ({ type, type02 }) => {
+const Category = ({ type, type02, color }) => {
   return (
     <div className="category-div">
-      <button href="#">{type}</button>
-      <button href="#">{type02}</button>
+      <h4 style={{color: color}}>{type.toUpperCase()}</h4>
+      {type02 !== ''? <h4 style={{color: color}}>{type02.toUpperCase()}</h4> : ''}
     </div>
   );
 };

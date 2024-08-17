@@ -27,7 +27,7 @@
   font-size: 2rem;
   font-weight: 700;
 }
-.header-PI button {
+.header-PI .btn-back, .backPokemon, .nextPokemon{
   border: none;
   background-color: transparent;
   font-size: 2.2rem;
@@ -39,4 +39,18 @@
     display: flex;
     justify-content: space-between;
     margin-top: 9rem;
+}
+@media (max-width: 860px) {
+}
+@media (max-width: 480px) {
+  .pokemon-header h3{
+    font-size: 1.2rem;
+  }
+  .pokemon-header h1{
+    font-size: 1.4rem;
+  }
+  .header-PI .btn-back, .backPokemon, .nextPokemon{
+    font-size: 2rem;
+  }
+  
 }
